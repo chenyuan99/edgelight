@@ -38,9 +38,11 @@ class EdgeLightOverlay(QWidget):
             -self.glow_width//2
         ))
 
-if __name__ == "__main__":
+def main():
+    """Main entry point for the edgelight application."""
     app = QApplication(sys.argv)
-
     overlay = EdgeLightOverlay()
-
     sys.exit(app.exec())
+
+if __name__ == "__main__":
+    main()
